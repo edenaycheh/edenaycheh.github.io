@@ -1,0 +1,103 @@
+body{
+    direction:rtl;
+    background:hsl(0, 0%, 100%);
+    margin:5%;
+    font-size: 150%;
+    font-family: Arial, "Times New Roman", serif;
+    }
+    
+    header{
+        background: #ffffff;
+        text-align: center;
+        border: 5px outset #dec4fa;
+         background-color: #ffffff;    
+          text-align: center;
+          padding: 0.5px 
+          
+    }
+    
+    h1{
+        color: #555555;
+    }
+    a{ text-decoration: none;}
+    ustify-content:space-around::after
+    flex-wrap:default
+    nav{
+        font-variant: small-caps;	
+        font-size: 150%;
+        background-color: #ffffff;
+    }
+    h2{
+        color: hsl(285, 29%, 95%);
+        background: rgb(241, 211, 236);
+        text-align: center;
+        border-radius: 15px;
+        border: 2px outset #e99dfd;
+        padding: 2px;
+        font-size: medium;
+       
+    
+
+    }
+    section{
+        width:30%;
+        margin-right:1%;
+        float: right;
+       
+        
+    }
+    
+    summary{
+        font-style: normal;
+    }
+    
+    details{
+        font-style: italic;
+    }
+    
+    footer{
+        background: #ffffff;
+        height:100px;
+        clear: both;
+    }
+    
+    img{
+        width: 30%;
+        float: left;
+        margin-left:70%;
+    }
+    .logo{
+        width: 100px;
+            }
+
+        .logo img{
+            float: right;
+            width: 200px;
+            height: 170px;
+            }
+    
+    a {
+        background-color: #ffffff;
+        color: #000000;
+        text-shadow: #0b0101;
+        border-radius: 10px;
+    }
+    
+    progress {
+        background: #f8c1ff;
+        border-radius: 15px;
+    }
+    
+    progress::-webkit-progress-bar {
+        background-color: #baa2be;	
+        border-radius: 15px;
+    }
+    
+    progress::-webkit-progress-value {
+        background-color: #9c72ff !important;
+        border-radius: 15px;
+    } 
+    progress::-moz-progress-bar {
+        background-color: #da97ff;
+        border-radius: 15px;
+    }
