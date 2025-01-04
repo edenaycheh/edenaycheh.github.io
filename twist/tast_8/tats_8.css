@@ -1,0 +1,42 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #ffc5d3
+}
+
+.sprite {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3468/3468378.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+    box-shadow: 0 0 15px #ff99cc, 0 0 30px #ff66b2; 
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease; 
+}
+button {
+    margin-top: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff99cc, #ff66b2); 
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 6px 12px rgba(255, 102, 178, 0.4);
+    transition: all 0.4s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff66b2, #ff3399); 
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0 8px 16px rgba(255, 102, 178, 0.6); /* Enhanced glow */
+    letter-spacing: 1px; /* Slight text expansion */
+}
