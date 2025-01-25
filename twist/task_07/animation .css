@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #CCFFCC;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    color: #000;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+}
+
+.text-line {
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+}
+
+/* Trigger animation when the checkbox is checked */
+#start:checked ~ .text-container .text-line {
+    animation: fade-in-out 4s forwards;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(2) {
+    animation-delay: 4s;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(3) {
+    animation-delay: 8s;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(4) {
+    animation-delay: 12s;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(5) {
+    animation-delay: 16s;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(6) {
+    animation-delay: 20s;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(7) {
+    animation-delay: 24s;
+}
+
+#start:checked ~ .text-container .text-line:nth-child(8) {
+    animation-delay: 28s;
+}
+
+/* Keyframe animation */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Style the start button */
+label.start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hide the button when the checkbox is checked */
+#start:checked + label {
+    display: none; /* Ensure the button completely disappears */
+}
+
+/* Re-display the button after animation finishes */
+#start:checked ~ .text-container:after {
+    content: '';
+    animation: reappear 36s forwards; /* Matches total animation time */
+    display: inline-block;
+}
+
+@keyframes reappear {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+label.start-button:hover {
+    background-color: #45a049;
+}
+
+/* Hide the checkbox */
+#start {
+    display: none;
+}

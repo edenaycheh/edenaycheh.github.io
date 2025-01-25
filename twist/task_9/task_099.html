@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden's Calculator</title>
+    <link rel="stylesheet" href="tast_09.css">
+</head>
+<body>
+    <h1>Eden's Calculator</h1>
+    <div class="input-box">
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1">
+    </div>
+    <div class="input-box">
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2">
+    </div>
+    <div class="buttons">
+        <button onclick="performOperation('add')">Add</button>
+        <button onclick="performOperation('subtract')">Subtract</button>
+        <button onclick="performOperation('multiply')">Multiply</button>
+        <button onclick="performOperation('divide')">Divide</button>
+
+    </div>
+    <div id="result"></div>
+
+    <script src="tast_09.js"></script>
+</body>
+</html>
