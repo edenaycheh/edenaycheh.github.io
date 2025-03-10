@@ -1,14 +1,104 @@
-<html><head>
-		<title>
-			videos.html
-		</title>		
-	</head>
-	<body>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dcX0KoI5Cws?si=Cno1YrPNyPQbm-ex?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>	
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1034823373?h=29e6d14f5b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:60%;height:100%;" title="for class"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-		<a href="https://www.youtube.com/watch?v=dcX0KoI5Cws&list=PLswgi6NEAU9zIZaf4Lry95HT3QjSN7QPo&index=2"target=>
-		<br>
-		<img src="photos/frame_photo.png" alt="image link"></a>			
-		<br>
-		<iframe width="10" height="10" src="https://www.youtube.com/embed/aaUoWMpI_n4?si=w7IQwe6ACjSuLQ3V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-		</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("photos/Eden.png") no-repeat center center fixed;
+      background-size: cover;
+    }
+    .small-video-container {
+      width: 50px;
+      height: 50px;
+      margin: 20px auto;
+      position: relative;
+      background: rgba(255, 255, 255, 0.8); 
+    }
+    .small-video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .video-container {
+      max-width: 560px;
+      margin: 20px auto;
+      position: relative;
+      padding-bottom: 56.25%; 
+      height: 0;
+      background: rgba(255, 255, 255, 0.8);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .vimeo-container {
+      max-width: 600px;
+      margin: 20px auto;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      background: rgba(255, 255, 255, 0.8); 
+    }
+    .vimeo-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .link-container {
+      text-align: center;
+      margin: 20px;
+    }
+    .link-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <section class="small-video-container">
+      <iframe src="https://www.youtube.com/embed/aaUoWMpI_n4?si=w7IQwe6ACjSuLQ3V&autoplay=1&mute=1" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+    </section>
+    <section class="video-container">
+      <iframe src="https://www.youtube.com/embed/dcX0KoI5Cws?si=Cno1YrPNyPQbm-ex&mute=1" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+    </section>
+    <section class="vimeo-container">
+      <iframe src="https://player.vimeo.com/video/1034823373?h=29e6d14f5b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+              title="Vimeo video player" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+              allowfullscreen>
+      </iframe>
+    </section>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <div class="link-container">
+      <a href="https://www.youtube.com/watch?v=dcX0KoI5Cws&list=PLswgi6NEAU9zIZaf4Lry95HT3QjSN7QPo&index=2" target="_blank">
+        <img src="photos/frame_photo.png" alt="Image link to playlist">
+      </a>
+    </div>
+  </main>
+</body>
+</html>

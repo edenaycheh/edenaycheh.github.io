@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click & Jump level</title>
+  <meta name="description" content="jumps on double click.">
+  <link rel="stylesheet" href="game_03.css">
+</head>
+<body>
+  <div id="introPopup" class="popup">
+    <div class="popupContent">
+      <p id="popupText">
+        Level Strategy: In this level, jump onto the shelves and then jump off them. Doing this will reveal a hidden gap in the forest floor. Once the gap is revealed, jump over it and reach the far right edge of the screen to win the level.
+        <br><br>
+        Move: Click once to move your character to the clicked spot.<br>
+        Jump: Double-click to make your character jump.
+      </p>
+      <button id="popupOkButton">OK</button>
+    </div>
+  </div>
+  <div id="winPopup" class="popup" style="display: none;">
+    <div class="popupContent">
+      <p id="winPopupText">You won! Choose an option:</p>
+      <button id="restartButton">Restart</button>
+      <button id="nextButton">Next</button>
+    </div>
+  </div>
+  <canvas id="gameCanvas" width="800" height="800"></canvas>
+  <script src="game_03.js"></script>
+</body>
+</html>
